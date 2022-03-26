@@ -167,9 +167,9 @@ body {
 }
 
 #file-upload-label {
-    color: #64a1d6;
     font-weight: 400;
     font-size: 18px;
+    color: #64a1d6;
 }
 #file-upload-label i{
     font-size: 24px;
