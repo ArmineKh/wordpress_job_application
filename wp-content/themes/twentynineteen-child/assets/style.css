@@ -1,0 +1,205 @@
+body {
+    background-color: #c0dffa
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 35px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.form-wrapper{
+    width: 100%;
+}
+.field-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+#personal-details.field-group{
+    display: flex;
+    flex-direction: column;
+
+}
+.field-group p {
+    width: 100%;
+}
+.fields-title {
+    flex-basis: 100%;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 28px;
+    color: #6d7882;
+    margin-bottom: 10px;
+}
+.fields-wrapper,
+.fieds-row {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+.fieds-row{
+   flex-direction: row;
+}
+.fieds-row input,
+.wpcf7-form-control-wrap{
+    width: 49%;
+}
+
+.field-group input,
+.field-group textarea ,
+#cover-letter{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 24px;
+    color: #6d7882;
+    margin-bottom: 10px;
+}
+.field-group input::placeholder,
+.field-group textarea::placeholder,
+#cover-letter::placeholder {
+    color: #696868;
+}
+#cover-letter,
+#comments{
+    width: 100%;
+}
+#work-history .fields-wrapper,
+#education-fields.fields-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.fieds-column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.fieds-column .wpcf7-form-control-wrap{
+    width: 100%;
+}
+.fieds-column:nth-of-type(even){
+    align-items: flex-end;
+}
+.fieds-column input,
+.fieds-column textarea {
+    width: 98%;
+}
+.button-wrapper{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.fieds-column .button-wrapper span {
+    font-size: 12px;
+    text-align: left;
+    line-height: 24px; 
+    color: #a0c5e5;
+    background-color: transparent;
+    padding: 5px;
+    max-width: 45%;
+    cursor: pointer;
+}
+.fieds-column .button-wrapper span + span {
+    float: left;
+}
+.fieds-column .button-wrapper span i{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #eaf3fa;
+    margin-right: 5px;
+}
+
+
+
+
+.file-input input {
+    color: transparent;
+    width: 100%;
+    border: none;
+}
+.file-input input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.file-input input::before {
+    font-family: "FontAwesome";
+    content: '\f0c6    Upload CV';
+    color: #64a1d6;
+    display: block;
+    /* width: 100%; */
+    height: 50px;
+    background: #FFF;
+    border: 1px dashed #64a1d6;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+.file-input input:hover::before {
+    border-color: black;
+}
+.file-input input:active {
+    outline: 0;
+}
+.file-input input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+#file-upload-label {
+    color: #64a1d6;
+    font-weight: 400;
+    font-size: 18px;
+}
+#file-upload-label i{
+    font-size: 24px;
+    margin-right: 5px;
+    color: #64a1d6;
+    margin-bottom: 15px;
+}
+
+.form-submit-btn{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000;
+    background-color: rgb(141, 223, 9);
+    text-align: center;
+    padding: 10px 32px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+}
+ 
+
+@media screen and (max-width: 768px) {
+    .fieds-row input, .wpcf7-form-control-wrap{
+        width: 100%;
+    }
+    .fields-wrapper, .fieds-row{
+        flex-direction: column;
+    }
+    .fieds-column{
+        width: 100%;
+    }
+}
